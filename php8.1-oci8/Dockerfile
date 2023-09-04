@@ -36,12 +36,11 @@ RUN apk add --no-cache --update \
         echo 'zend_extension = xdebug.so'; \
         echo ''; \
         echo '[xdebug]'; \
-        echo 'xdebug.mode = debug'; \
-        echo 'xdebug.client_host = host.docker.internal'; \
         echo 'xdebug.client_port = 9003'; \
         echo 'xdebug.discover_client_host = true'; \
         echo 'xdebug.remote_handler = dbgp'; \
         echo 'xdebug.idekey = PHPSTORM'; \
+        echo 'xdebug.log_level = 0'; \
         echo 'xdebug.show_error_trace = true'; \
         echo 'xdebug.max_nesting_level = 250'; \
         echo 'xdebug.var_display_max_depth = 10'; \

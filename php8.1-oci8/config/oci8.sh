@@ -18,10 +18,8 @@ ln -s /opt/oracle/instantclient_21_4 /opt/oracle/instantclient
 ln -s /usr/lib/libnsl.so.2 /usr/lib/libnsl.so.1
 ln -s /lib/libc.so.6 /usr/lib/libresolv.so.2
 
-
 # export LD_LIBRARY_PATH=/opt/oracle/instantclient
 LD_LIBRARY_PATH=/opt/oracle/instantclient:$LD_LIBRARY_PATH
-
 
 #install oci8
 /usr/bin/pecl81 channel-update pecl.php.net
